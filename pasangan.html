@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kartu Ucapan Ulang Tahun</title>
+    <link rel="stylesheet" href="p.css">
+</head>
+<body>
+    <div class="card">
+        <div class="page page1">
+            <div class="content">
+                <h1>Selamat Ulang Tahun, Sayang!</h1>
+                <p>
+                    Di hari yang istimewa ini, aku ingin mengungkapkan betapa beruntungnya aku memiliki kamu dalam hidupku. Kamu adalah bintang yang selalu menerangi jalanku, dan aku tidak bisa membayangkan hidup tanpamu. 
+                </p>
+                <p>
+                    Setiap momen bersamamu terasa begitu indah, dan hari ini aku ingin kamu tahu betapa aku mencintaimu lebih dari kata-kata yang bisa diungkapkan. Kamu selalu menjadi alasan di balik senyumku, kebahagiaanku, dan semangatku untuk terus maju.
+                </p>
+            </div>
+            <button class="next">Halaman Selanjutnya</button>
+        </div>
+        <div class="page page2">
+            <div class="content">
+                <h1>Harapan untukmu</h1>
+                <p>
+                    Semoga di usia yang baru ini, kamu selalu diberkahi dengan kebahagiaan, kesehatan, dan segala kebaikan yang kamu pantas dapatkan. Setiap langkah yang kamu ambil, semoga penuh dengan kesuksesan dan cinta.
+                </p>
+                <p>
+                    Terima kasih sudah menjadi sosok yang luar biasa di hidupku. Aku akan selalu ada untuk mendukungmu, menyayangimu, dan menjalani setiap petualangan hidup ini bersamamu. Selamat ulang tahun, cintaku!
+                </p>
+                <p class="closing">
+                    Dengan cinta yang tak pernah pudar
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const nextButton = document.querySelector('.next');
+        const card = document.querySelector('.card');
+        nextButton.addEventListener('click', function() {
+            card.classList.add('flip');
+        });
+    </script>
+</body>
+</html>
